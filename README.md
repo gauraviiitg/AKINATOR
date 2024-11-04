@@ -1,5 +1,5 @@
 
-# RAMAN__EFFECT
+# AKINATOR
 
 # Automated Customer Issue Categorization and Resolution System
 
