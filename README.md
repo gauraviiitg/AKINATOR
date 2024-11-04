@@ -53,11 +53,8 @@ The project has two levels of logic to balance computational efficiency and perf
 3. **Response Generation**: Once categorized, the system selects the appropriate response and sends it back to the customer.
 
 #### **Advanced Logic (refer to advanced_logic.ipynb)**
-1. **Enhanced Model Training**: For higher accuracy, the **BERT** model is used to capture the complex structure and nuances in customer queries, providing more accurate categorization for recurring customer issues.
-2. **Real-time API (Optional)**: An API can be built for integration with live systems, allowing the system to receive queries and respond instantly.
+1. **Enhanced Model Training**: For higher accuracy, the **BERT** model is used to capture the complex structure and nuances in customer queries, providing more accurate categorization for recurring customer issues. have not uploaded RESULT due to limit exhaustion of lfs.
 
 ### **Contributing**
 Feel free to contribute to this project by opening an issue or submitting a pull request.
 
-### **License**
-This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
