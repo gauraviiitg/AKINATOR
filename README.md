@@ -1,3 +1,4 @@
+
 # RAMAN__EFFECT
 
 # Automated Customer Issue Categorization and Resolution System
@@ -24,7 +25,7 @@ Customers often encounter simple, recurring issues that could be resolved withou
   - Transactions
   - Credit/Debit Cards
   - Loans
-  - Online Banking and more.
+  - Online Banking, and more.
   
 ### **Sample Use Case**
 A customer asks: **"How do I change my address in my account?"**  
@@ -43,15 +44,20 @@ To train the system, we are working with sample **FAQ data** representing common
 2. **Query Variations**: Each predefined question comes with multiple possible phrasings to train the model effectively.
 
 ### **Model Workflow**
-1. **Data Preprocessing**: Clean, tokenize, and vectorize customer queries.
-2. **Model Training**: Use machine learning models (e.g., SVM, Logistic Regression, or Neural Networks) to classify customer queries into predefined categories.
-3. **Response Generation**: Once categorized, the system selects the appropriate response and sends it back to the customer.
-4. **API (Optional)**: A REST API can be built for integration with a live system to receive queries and respond in real-time.
 
+The project has two levels of logic to balance computational efficiency and performance:
+
+#### **Logic (Basic)(refer to logic.ipynb)**
+1. **Data Preprocessing**: Clean, tokenize, and vectorize customer queries.
+2. **Model Training**: Use a **Support Vector Machine (SVM)** model to classify customer queries into predefined categories. This approach is used initially to reduce computational power requirements while maintaining satisfactory accuracy.
+3. **Response Generation**: Once categorized, the system selects the appropriate response and sends it back to the customer.
+
+#### **Advanced Logic (refer to advanced_logic.ipynb)**
+1. **Enhanced Model Training**: For higher accuracy, an **LSTM (Long Short-Term Memory)** model is used to capture the complex structure and nuances in customer queries, providing more accurate categorization for recurring customer issues.
+2. **Real-time API (Optional)**: An API can be built for integration with live systems, allowing the system to receive queries and respond instantly.
 
 ### **Contributing**
 Feel free to contribute to this project by opening an issue or submitting a pull request.
-
 
 ### **License**
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details.
