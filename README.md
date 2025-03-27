@@ -1,5 +1,5 @@
 
-# AKINATOR
+# AKINATOr
 
 # Automated Customer Issue Categorization and Resolution System
 
